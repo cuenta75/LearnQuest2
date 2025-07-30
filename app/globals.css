@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 5.9% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 5.9% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 5.9% 10%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+
+    /* Custom colors */
+    --deep-blue: 220 30% 19%; /* A deep, rich blue */
+    --mint-green: 122 39% 63%; /* A vibrant, fresh green */
+    --light-gray: 220 14% 95%; /* A very light gray */
+    --dark-gray: 217 8% 50%; /* A darker gray for text on light backgrounds */
+    --golden-yellow: 45 100% 50%; /* A bright golden yellow */
+    --soft-green: 120 60% 94%; /* A soft green background */
+    --light-blue: 195 60% 93%; /* A light blue background */
+    --dark-green: 122 50% 40%; /* A dark green color */
+    --light-purple: 250 60% 94%; /* A light purple color */
+    --dark-purple: 250 50% 48%; /* A dark purple color */
+    --light-orange: 39 100% 94%; /* A light orange color */
+    --dark-orange: 29 100% 48%; /* A dark orange color */
+    --header-blue: 210 100% 12%; /* #001f3d */
+  }
+
+  .dark {
+    --background: 240 5.9% 10%;
+    --foreground: 0 0% 98%;
+    --card: 240 5.9% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 5.9% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    /* Custom colors for dark mode */
+    --deep-blue: 210 40% 96%; /* Lighter blue for dark mode text */
+    --mint-green: 122 39% 63%; /* Same green */
+    --light-gray: 240 5.9% 10%; /* Darker background */
+    --dark-gray: 217 8% 70%; /* Lighter gray for dark mode text */
+    --golden-yellow: 45 100% 50%; /* Same yellow */
+    --soft-green: 120 60% 15%; /* Darker soft green */
+    --light-blue: 195 60% 15%; /* Darker light blue */
+    --dark-green: 122 50% 60%; /* Lighter dark green */
+    --light-purple: 250 60% 15%; /* Darker light purple */
+    --dark-purple: 250 50% 60%; /* Lighter dark purple */
+    --light-orange: 39 100% 15%; /* Darker light orange */
+    --dark-orange: 29 100% 60%; /* Lighter dark orange */
+    --header-blue: 210 100% 12%; /* #001f3d */
+  }
+}
+
+@layer utilities {
+  .text-deep-blue {
+    color: hsl(var(--deep-blue));
+  }
+  .bg-deep-blue {
+    background-color: hsl(var(--deep-blue));
+  }
+  .hover\:bg-deep-blue\/90:hover {
+    background-color: hsl(var(--deep-blue) / 0.9);
+  }
+  .border-deep-blue {
+    border-color: hsl(var(--deep-blue));
+  }
+
+  .text-mint-green {
+    color: hsl(var(--mint-green));
+  }
+  .bg-mint-green {
+    background-color: hsl(var(--mint-green));
+  }
+  .hover\:bg-mint-green\/90:hover {
+    background-color: hsl(var(--mint-green) / 0.9);
+  }
+  .border-mint-green {
+    border-color: hsl(var(--mint-green));
+  }
+
+  .bg-light-gray {
+    background-color: hsl(var(--light-gray));
+  }
+
+  .bg-dark-gray {
+    background-color: hsl(var(--dark-gray));
+  }
+
+  .bg-golden-yellow {
+    background-color: hsl(var(--golden-yellow));
+  }
+
+  .bg-soft-green {
+    background-color: hsl(var(--soft-green));
+  }
+
+  .bg-light-blue {
+    background-color: hsl(var(--light-blue));
+  }
+
+  .bg-dark-green {
+    background-color: hsl(var(--dark-green));
+  }
+
+  .bg-light-purple {
+    background-color: hsl(var(--light-purple));
+  }
+
+  .bg-dark-purple {
+    background-color: hsl(var(--dark-purple));
+  }
+
+  .bg-light-orange {
+    background-color: hsl(var(--light-orange));
+  }
+
+  .bg-dark-orange {
+    background-color: hsl(var(--dark-orange));
+  }
+
+  /* New header blue */
+  .bg-header-blue {
+    background-color: hsl(var(--header-blue));
+  }
+}
