@@ -43,7 +43,7 @@ export default function ModuleCompletionPage({ params }: { params: { id: string 
 
   const completionData = {
     courseTitle: courseTitle,
-    certificateImageUrl: /certificate-${courseId}.png, // Dynamic certificate image
+    certificateImageUrl: `/certificate-${courseId}.png`, // Dynamic certificate image
     tokensEarned: tokensEarned,
     bonusTokens: bonusTokens,
     score: score,
@@ -67,7 +67,7 @@ export default function ModuleCompletionPage({ params }: { params: { id: string 
     <div className="flex min-h-screen flex-col bg-light-gray">
       <header className="sticky top-0 z-50 w-full bg-header-blue shadow-sm">
         <div className="container flex h-20 items-center justify-between px-4 md:px-6">
-          <Link href={/module/${courseId}/feedback/ai} className="flex items-center gap-2">
+          <Link href={`/module/${courseId}/feedback/ai`} className="flex items-center gap-2">
             <ArrowLeft className="h-6 w-6 text-white" />
             <Image src="/learnquest-logo-horizontal-white.png" alt="LearnQuest Logo" width={150} height={32} />
             <span className="sr-only">LearnQuest</span>
